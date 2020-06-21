@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">PizzaXpress Survey Form</h1>
+    <p id="description" class="description text-center">
+      With your help we make better Pizza now and always
+    </p>
+  </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+        />
+        </div>
+        <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+        />
+        </div>
+        <div class="form-group">
+        <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+        >
+        <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+        />
+        </div>
+        <div class="form-group">
+        <p>How frequently do you have pizza?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>How frequently</option>
+            <option value="Once a month">Once a month</option>
+            <option value="Weekly">Once a week</option>
+            <option value="Daily">Atleast once a day</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>Would you recommend PizzaXpress to a friend?</p>
+        <label>
+            <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+            />Definitely</label
+        >
+        <label>
+            <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+            />Maybe</label
+        >
+
+        <label
+            ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+            />Not sure</label
+        >
+        </div>
+
+        <div class="form-group">
+        <p>
+            Which pizza is your favorite at PizzaXpress?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="vegan">Vegan</option>
+            <option value="Cheese">Cheese</option>
+            <option value="veggie">Veggie</option>
+            <option value="meat">Meat</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label
+            ><input
+            name="prefer"
+            value="speed"
+            type="checkbox"
+            class="input-checkbox"
+            />Speed</label
+        >
+        <label>
+            <input
+            name="prefer"
+            value="delivery"
+            type="checkbox"
+            class="input-checkbox"
+            />Delivery</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="data-visualization"
+            type="Customer Service"
+            class="input-checkbox"
+            />Customer Service</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="Freshness"
+            type="checkbox"
+            class="input-checkbox"
+            />Freshness</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="location"
+            type="checkbox"
+            class="input-checkbox"
+            />location</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="timing"
+            type="checkbox"
+            class="input-checkbox"
+            />Timing</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="Seasonings"
+            type="checkbox"
+            class="input-checkbox"
+            />Seasonings</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="Sauce"
+            type="checkbox"
+            class="input-checkbox"
+            />Sauce</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="Hygiene"
+            type="checkbox"
+            class="input-checkbox"
+            />Hygien</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="Pass"
+            type="checkbox"
+            class="input-checkbox"
+            />Pass</label
+        >
+        <label
+            ><input
+            name="prefer"
+            value="None"
+            type="checkbox"
+            class="input-checkbox"
+            />None</label
+        >
+        </div>
+
+        <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+        ></textarea>
+        </div>
+
+        <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
